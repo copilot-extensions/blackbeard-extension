@@ -8,11 +8,11 @@ Bun.serve({
     const tokenForUser = request.headers.get("X-GitHub-Token");
     const octokit = new Octokit({ auth: tokenForUser });
     const user = await octokit.rest.users.getAuthenticated();
-    console.log(`User: ${user.data.login}`);
+    console.log("User:", user.data.login);
 
     // Parse the request payload and log it.
     const payload = (await request.json()) as ExtensionRequestPayload;
-    console.log(payload);
+    console.log("Payload:", payload);
 
     // Insert a special pirate-y system message in our message list.
     const messages = payload.messages;
