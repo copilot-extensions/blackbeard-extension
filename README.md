@@ -1,17 +1,23 @@
-# msft-build-extension
+# demo-copilot-extension
 
 ## Development
 
 Install dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
 To run:
 
 ```bash
-bun dev
+npm start
+```
+
+or in watch mode:
+
+```bash
+npm run dev
 ```
 
 ## Deployment

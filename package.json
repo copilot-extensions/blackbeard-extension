@@ -1,14 +1,9 @@
 {
-  "name": "msft-build-extension",
-  "module": "index.ts",
+  "name": "demo-copilot-extension",
+  "module": "index.js",
   "scripts": {
-    "dev": "bun --hot index.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
   "type": "module",
   "dependencies": {
