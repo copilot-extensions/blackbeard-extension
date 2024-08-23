@@ -1,4 +1,4 @@
-import { Octokit } from "octokit";
+import { Octokit } from "@octokit/core";
 import express from "express";
 import { Readable } from "node:stream";
 
@@ -8,7 +8,7 @@ app.post("/", express.json(), async (req, res) => {
   // Identify the user, using the GitHub API token provided in the request headers.
   const tokenForUser = req.get("X-GitHub-Token");
   const octokit = new Octokit({ auth: tokenForUser });
-  const user = await octokit.rest.users.getAuthenticated();
+  const user = await octokit.request("GET /user");
   console.log("User:", user.data.login);
 
   // Parse the request payload and log it.
@@ -43,6 +43,7 @@ app.post("/", express.json(), async (req, res) => {
     }
   );
 
+  // Stream the response straight back to the user.
   Readable.from(copilotLLMResponse.body).pipe(res);
 })
 
