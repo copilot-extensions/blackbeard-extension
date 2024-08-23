@@ -1,6 +1,7 @@
 {
-  "name": "demo-copilot-extension",
-  "module": "index.js",
+  "name": "blackbeard-extension",
+  "private": "true",
+  "description": "A basic example of a Copilot Extension",
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js"
