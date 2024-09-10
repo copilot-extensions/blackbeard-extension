@@ -1,4 +1,4 @@
-# blackbeard-extension
+#content/copilot/building-copilot-extensions/about-building-copilot-extensions.md blackbeard-extension
 
 Blackbeard is a basic example of a [GitHub Copilot Extension](https://docs.github.com/en/copilot/using-github-copilot/using-extensions-to-integrate-external-tools-with-copilot-chat). It responds to messages like a pirate, using Copilot's LLM API and special system prompts. This repository should serve as an example of the building blocks of a Copilot Extension. See [index.js](/index.js) for the main logic.
 
