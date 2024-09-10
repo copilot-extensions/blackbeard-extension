@@ -6,7 +6,7 @@ Blackbeard is a basic example of a [GitHub Copilot Extension](https://docs.githu
 > Copilot Extensions are in public beta and may be subject to change.
 > 
 > All enrolled users with a GitHub Copilot Individual subscription can use Copilot Extensions.
-> For organizations and enterprises with a Copilot Business or Copilot Enterprise subscription, organization owners and enterprise administrators can grant access to Copilot Extensions for use within their organization.
+> For organizations and enterprises with a Copilot Business or Copilot Enterprise subscription, organization owners and enterprise administrators can grant access to Copilot Extensions for use within their company.
 
 ## Development
 
