@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/core";
 import express from "express";
 import { Readable } from "node:stream";
+import { prompt } from '@copilot-extensions/preview-sdk';
 
 const app = express()
 
@@ -28,23 +29,13 @@ app.post("/", express.json(), async (req, res) => {
 
   // Use Copilot's LLM to generate a response to the user's messages, with
   // our extra system messages attached.
-  const copilotLLMResponse = await fetch(
-    "https://api.githubcopilot.com/chat/completions",
-    {
-      method: "POST",
-      headers: {
-        authorization: `Bearer ${tokenForUser}`,
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        messages,
-        stream: true,
-      }),
-    }
-  );
+  const copilotLLMResponse = await prompt.stream({
+    token: tokenForUser,
+    messages
+  });
 
   // Stream the response straight back to the user.
-  Readable.from(copilotLLMResponse.body).pipe(res);
+  Readable.from(copilotLLMResponse.stream).pipe(res);
 })
 
 const port = Number(process.env.PORT || '3000')
