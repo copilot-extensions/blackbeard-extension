@@ -1,9 +1,9 @@
 # blackbeard-extension
 
-Blackbeard is a basic example of a GitHub Copilot Extension. It responds to messages like a pirate, using Copilot's LLM API and special system prompts. This repository should serve as an example of the building blocks of a Copilot Extension. See [index.js](/index.js) for the main logic.
+Blackbeard is a basic example of an agent-based GitHub Copilot Extension. It responds to messages like a pirate, using Copilot's LLM API and special system prompts. This repository should serve as an example of the building blocks of a Copilot Extension. See [index.js](/index.js) for the main logic.
 
 > [!NOTE]
-> Copilot Extensions are in public beta and may be subject to change.
+> Copilot Extensions are in public preview and may be subject to change.
 > 
 > All enrolled users with a GitHub Copilot Individual subscription can use Copilot Extensions.
 > For organizations and enterprises with a Copilot Business or Copilot Enterprise subscription, organization owners and enterprise administrators can grant access to Copilot Extensions for use within their company.
