@@ -8,6 +8,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@copilot-extensions/preview-sdk": "^5.0.1",
     "@octokit/core": "^6.1.2",
     "express": "^4.19.2"
   }
