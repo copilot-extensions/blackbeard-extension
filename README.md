@@ -1,10 +1,13 @@
+> [!NOTE]
+> This is a fork modified to run on Cloudflare Workers.
+
 # blackbeard-extension
 
 Blackbeard is a basic example of an agent-based GitHub Copilot Extension. It responds to messages like a pirate, using Copilot's LLM API and special system prompts. This repository should serve as an example of the building blocks of a Copilot Extension. See [index.js](/index.js) for the main logic.
 
 > [!NOTE]
 > Copilot Extensions are in public preview and may be subject to change.
-> 
+>
 > All enrolled users with a GitHub Copilot Individual subscription can use Copilot Extensions.
 > For organizations and enterprises with a Copilot Business or Copilot Enterprise subscription, organization owners and enterprise administrators can grant access to Copilot Extensions for use within their company.
 
@@ -13,19 +16,13 @@ Blackbeard is a basic example of an agent-based GitHub Copilot Extension. It res
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
-To run:
+To run for development:
 
 ```bash
-npm start
-```
-
-or in watch mode:
-
-```bash
-npm run dev
+pnpm dev
 ```
 
 ## Documentation
