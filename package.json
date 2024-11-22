@@ -1,14 +1,23 @@
 {
-  "name": "blackbeard-extension",
-  "private": "true",
-  "description": "A basic example of a Copilot Extension",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
-  },
-  "type": "module",
-  "dependencies": {
-    "@octokit/core": "^6.1.2",
-    "express": "^4.19.2"
-  }
+	"name": "blackbeard-extension",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.5.2",
+		"@cloudflare/workers-types": "^4.20241112.0",
+		"typescript": "^5.5.2",
+		"vitest": "2.0.5",
+		"wrangler": "^3.60.3"
+	},
+	"dependencies": {
+		"@octokit/core": "^6.1.2",
+		"express": "^4.21.1"
+	}
 }
