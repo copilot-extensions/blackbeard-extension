@@ -1,5 +1,7 @@
 > [!NOTE]
 > This is a fork modified to run on Cloudflare Workers.
+> - js -> ts
+> - npm -> pnpm
 
 # blackbeard-extension
 
