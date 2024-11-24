@@ -17,7 +17,6 @@
 		"wrangler": "^3.90.0"
 	},
 	"dependencies": {
-		"@octokit/core": "^6.1.2",
-		"express": "^4.21.1"
+		"@octokit/core": "^6.1.2"
 	}
 }
