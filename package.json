@@ -14,10 +14,10 @@
 		"@cloudflare/workers-types": "^4.20241112.0",
 		"typescript": "^5.5.2",
 		"vitest": "2.0.5",
-		"wrangler": "^3.60.3"
+		"wrangler": "^3.90.0"
 	},
 	"dependencies": {
 		"@octokit/core": "^6.1.2",
-		"express": "^4.21.1"
+		"hono": "^4.6.11"
 	}
 }
