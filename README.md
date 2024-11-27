@@ -1,7 +1,11 @@
 > [!NOTE]
 > This is a fork modified to run on Cloudflare Workers.
+>
+> Other changes:
 > - js -> ts
 > - npm -> pnpm
+> - use hono
+> - fetch -> openai
 
 # blackbeard-extension
 
@@ -28,6 +32,7 @@ pnpm dev
 ```
 
 ## Documentation
+
 - [Using Copilot Extensions](https://docs.github.com/en/copilot/using-github-copilot/using-extensions-to-integrate-external-tools-with-copilot-chat)
 - [About building Copilot Extensions](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions)
 - [Set up process](https://docs.github.com/en/copilot/building-copilot-extensions/setting-up-copilot-extensions)

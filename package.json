@@ -7,17 +7,22 @@
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
+		"format": "prettier --write .",
+		"check": "prettier --check .",
 		"cf-typegen": "wrangler types"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.5.2",
+		"@cloudflare/vitest-pool-workers": "^0.5.32",
 		"@cloudflare/workers-types": "^4.20241112.0",
-		"typescript": "^5.5.2",
+		"prettier": "^3.4.1",
+		"typescript": "^5.7.2",
 		"vitest": "2.0.5",
-		"wrangler": "^3.90.0"
+		"wrangler": "^3.91.0"
 	},
 	"dependencies": {
 		"@octokit/core": "^6.1.2",
-		"hono": "^4.6.11"
+		"asn1js": "^3.0.5",
+		"hono": "^4.6.12",
+		"openai": "^4.73.1"
 	}
 }
