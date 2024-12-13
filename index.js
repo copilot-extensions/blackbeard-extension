@@ -4,6 +4,10 @@ import { Readable } from "node:stream";
 
 const app = express()
 
+app.get("/", (req, res) => {
+  res.send("Ahoy, matey! Welcome to the Blackbeard Pirate GitHub Copilot Extension!")
+});
+
 app.post("/", express.json(), async (req, res) => {
   // Identify the user, using the GitHub API token provided in the request headers.
   const tokenForUser = req.get("X-GitHub-Token");
