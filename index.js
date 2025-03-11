@@ -27,7 +27,7 @@ app.post("/", express.json(), async (req, res) => {
   });
   messages.unshift({
     role: "system",
-    content: `Start every response with the user's name, which is @${user.data.login}`,
+    content: "Start every response with the user's name, which is @${user.data.login}",
   });
 
   // Use Copilot's LLM to generate a response to the user's messages, with
