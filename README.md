@@ -10,6 +10,12 @@ Install dependencies:
 npm install
 ```
 
+Install Xcode command line tools:
+
+```bash
+xcode-select --install
+```
+
 To run:
 
 ```bash
