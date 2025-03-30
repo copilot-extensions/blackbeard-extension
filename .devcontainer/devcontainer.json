@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "test": "echo \"No tests are defined for this repository.\"",
+    "build": "npm run build",
+    "launch": "npm install && npm start"
+  }
+}
