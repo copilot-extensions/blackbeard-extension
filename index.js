@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/core";
 import express from "express";
 import { Readable } from "node:stream";
+import { handleTokenExchange } from "./modules/exchangeController.js";
 
 const app = express()
 
@@ -50,6 +51,9 @@ app.post("/", express.json(), async (req, res) => {
   // Stream the response straight back to the user.
   Readable.from(copilotLLMResponse.body).pipe(res);
 })
+
+// Endpoint to handle token exchange requests (OIDC token exchange)
+app.post('/exchange', express.urlencoded({ extended: true }), handleTokenExchange);
 
 const port = Number(process.env.PORT || '3000')
 app.listen(port, () => {
