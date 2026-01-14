@@ -9,6 +9,6 @@
   "type": "module",
   "dependencies": {
     "@octokit/core": "^6.1.2",
-    "express": "^4.19.2"
+    "express": "^4.22.1"
   }
 }
